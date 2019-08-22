@@ -1,33 +1,65 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.grid-container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 150px 10px 150px;
+    background-color: darkcyan;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grid-header-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: cadetblue;
+    padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.justify-left {
+    text-align: left
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.justify-end {
+    text-align: right;
+}
+
+.justify-center {
+    text-align: center;
+}
+
+.restart-button {
+    width: 15em;
+    height: 3em;
+    color: white;
+    background-color: tomato;
+    border: 0;
+}
+
+.game-status-text {
+    font-family: sans-serif;
+    color: red;
+    font-weight: bold;
+}
+
+.card {
+    width: 100%;
+    height: 10em;
+    background-color: aqua;
+    color: black;
+    font-size: 15px;
+}
+
+.hide-card {
+    visibility: hidden;
+}
+
+.card-front {
+    background-color: cadetblue;
+    box-shadow: 5px 5px 5px tomato;
+}
+
+.card-back {
+    font-weight: bold;
 }
